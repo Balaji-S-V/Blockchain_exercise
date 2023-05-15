@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Transaction Form</title>
+</head>
+<body style="display: flex; width: 100vw; height: 100vh; justify-content: center; align-items: center;">
+  <form id="transaction-form" style="height: 300px; width: 400px; display: flex; flex-direction: column; align-items: center; justify-content: space-around;">
+    <div style="width: 100%; margin-bottom: 30px; display: flex; justify-content: space-between;">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div style="width: 100%; margin-bottom: 30px; display: flex; justify-content: space-between;">
+      <label for="id">Unique ID:</label>
+      <input type="text" id="id" name="id" required>
+    </div>
+    <div style="width: 100%; margin-bottom: 30px; display: flex; justify-content: space-between;">
+      <label for="amount">Transaction Amount:</label>
+      <input type="text" id="amount" name="amount" required>
+    </div>
+    <div style="width: 100%; margin-bottom: 30px; display: flex; justify-content: space-between;">
+      <button type="submit" style="width: 200px; height: 50px;">Submit Transaction</button>
+    </div>
+  </form>
+  <div id="status"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
